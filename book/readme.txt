@@ -1,8 +1,6 @@
-编译源代码的步骤：
-1. 下载源代码，
-   1.1 在EDK根目录下建立uefi目录。下载源文件并将文件夹book复制到uefi目录。
-   1.2 或者在EDK根目录执行如下命令
-       svn checkout http://uefi-programming-guider.googlecode.com/svn/trunk/ uefi
+编译源代码的步骤(EDK2最好是更新到版本号13087)：
+1. 在EDK2根目录下建立uefi目录。
+2. 将文件夹book复制到uefi目录。
 3. 打开CMD命令行
 4. 在命令行切换到EDK2根目录
 5. 在命令行执行
