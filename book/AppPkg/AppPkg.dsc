@@ -143,7 +143,8 @@
   $(UEFI_BOOK_DIR)/CppPkg/test/testcpp.inf
   $(UEFI_BOOK_DIR)/disk/DevicePath/TestDevicePath.inf
   $(UEFI_BOOK_DIR)/disk/AtaPassThru/TestPassThru.inf
-  $(UEFI_BOOK_DIR)/audio/testac97.inf
   $(UEFI_BOOK_DIR)/audio/audio.inf
   $(UEFI_BOOK_DIR)/systemtable/memory/BSmem.inf
 
+[Components.X64]
+  $(UEFI_BOOK_DIR)/audio/testac97.inf
