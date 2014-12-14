@@ -454,7 +454,7 @@ EFIAPI AC97Play(
 
     //Print(L"Size:%d\n", Size);
 	for( i=0; i< 32; i++, FramesLeft-=FRAMES_PER_BLOCK){
-        if( i * FRAMES_PER_BLOCK >= Size/4) break;
+        if( (UINTN)i * FRAMES_PER_BLOCK >= Size/4) break;
 		Private->Bdes[i].addr = (u32)(PcmData + FRAMES_PER_BLOCK * 4 * i);
         Private->Bdes[i].len = (u16)(FramesLeft < FRAMES_PER_BLOCK?FramesLeft*2:FRAMES_PER_BLOCK*2);
         Private->Bdes[i].BUP = 0;
