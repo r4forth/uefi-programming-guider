@@ -16,5 +16,6 @@
   UefiLib
 [Protocols]
   gEfiDiskIoProtocolGuid
+  gEfiDevicePathToTextProtocolGuid
 [BuildOptions]  
 MSFT:DEBUG_*_IA32_CC_FLAGS = /Od
