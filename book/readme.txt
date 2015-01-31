@@ -9,6 +9,11 @@
 6. 在命令行执行
     build -p uefi\book\Nt32Pkg\Nt32Pkg.dsc
     build -p uefi\book\AppPkg\AppPkg.dsc
+7. 把StdLib\Include\sys\EfiCdefs.h第330行注释掉
+   #ifdef _NATIVE_WCHAR_T_DEFINED
+   // #error You must specify /Zc:wchar_t- to the compiler to turn off intrinsic nwchar_t.
+   #endif
+8. 在命令行执行
     build -p uefi\book\GUIPkg\GUIPkg.dsc
 
 编译源代码的步骤(UDK2014)：
